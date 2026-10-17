@@ -2,58 +2,90 @@
 AIGC:
     Label: "1"
     ContentProducer: 001191440300708461136T1XGW3
-    ProduceID: a00e5df06e93a5902bdea1ae35e297b8_cce31d3cc96811f196f9525400248c00
-    ReservedCode1: tiv4hTEnjg5JlnfxgBFzUmjPqkNBdzq+sMP3hgRlXUUkjneer0BMidSG+CCfGEcRXaa/RZRIntaTuLoUqECwcEi8e+WYexCtmbnhtv4VxeeV0Qmi1HiY6sx/87r5DbL9l6MgAnBec9J44UuTLKqwAThi/nTOBQIV+baBPYtc+Q2BguTDejSLeJMpjJU=
+    ProduceID: a00e5df06e93a5902bdea1ae35e297b8_cecaf8cdc96811f196f9525400248c00
+    ReservedCode1: Tij2ycXbgrXJjzqAOHa+V1dcp+1mS2PE1lTYLVFWPmV9WnT5tAr8eVq8acyBhk4+zZ1A3B0mZHML0MM4zsZ0Nqjm0jdlkTkn/d6vPmTovx4ugJGSPIfP9QRDFud2EBFW0ODa12HfQ+ArNxELQJM/fXEQ5A+vMgDl12EwtCd0FjUhl3B7JsEy3cdTePg=
     ContentPropagator: 001191440300708461136T1XGW3
-    PropagateID: a00e5df06e93a5902bdea1ae35e297b8_cce31d3cc96811f196f9525400248c00
-    ReservedCode2: tiv4hTEnjg5JlnfxgBFzUmjPqkNBdzq+sMP3hgRlXUUkjneer0BMidSG+CCfGEcRXaa/RZRIntaTuLoUqECwcEi8e+WYexCtmbnhtv4VxeeV0Qmi1HiY6sx/87r5DbL9l6MgAnBec9J44UuTLKqwAThi/nTOBQIV+baBPYtc+Q2BguTDejSLeJMpjJU=
+    PropagateID: a00e5df06e93a5902bdea1ae35e297b8_cecaf8cdc96811f196f9525400248c00
+    ReservedCode2: Tij2ycXbgrXJjzqAOHa+V1dcp+1mS2PE1lTYLVFWPmV9WnT5tAr8eVq8acyBhk4+zZ1A3B0mZHML0MM4zsZ0Nqjm0jdlkTkn/d6vPmTovx4ugJGSPIfP9QRDFud2EBFW0ODa12HfQ+ArNxELQJM/fXEQ5A+vMgDl12EwtCd0FjUhl3B7JsEy3cdTePg=
 ---
 
-# Data Science Projects
+# Visualizing Severe Traffic Crash Patterns in Chicago, 2024–2025
 
-Welcome to my Data Science Projects repository! This repository contains a collection of my data science projects, showcasing my skills in data analysis, visualization, and data-driven storytelling. Each project demonstrates different aspects of data wrangling, exploratory analysis, and visualization.
+**CISC7204 Assignment 02 — Pair Project**
 
-[![GitHub repo size](https://img.shields.io/github/repo-size/mc63151-code/data-science-project?style=social)](https://github.com/mc63151-code/data-science-project)
-[![GitHub last commit](https://img.shields.io/github/last-commit/mc63151-code/data-science-project?style=social)](https://github.com/mc63151-code/data-science-project)
+- **Members:** Tang I Choi (MC631517), Tan Min Fai (MC637132)
+- **Region:** Chicago, Illinois, United States
+- **Domain:** Transportation / Road Safety / Public Safety
 
-### Portfolio Page
+## Research Question
 
-[![Data-Science-Portfolio](https://img.shields.io/badge/Data_Science_Portfolio-GitHub_Page-%2300BFFF.svg)](https://mc63151-code.github.io/data-science-portfolio/)
+Where and under which temporal, environmental, road-user, and demographic conditions were severe traffic crashes and injuries disproportionately represented in Chicago during 2024–2025?
 
-## Projects
+A severe crash is defined as a crash whose most severe injury is **fatal or incapacitating**.
 
-1. [Chicago Traffic Crash Severity Analysis (2024–2025)](https://github.com/mc63151-code/data-science-project)
-   - **Description:** The project analyzes 221,175 traffic crash records from the Chicago Data Portal, examining how weather, lighting, road surface, speed limit, time of day, road-user type, and participant characteristics relate to severe crashes (fatal or incapacitating-injury outcomes).
-   - **Technologies Used:** The notebook uses pandas, numpy, matplotlib, and the requests-based Socrata Open Data API.
-   - **Results:** 3,312 crashes (≈1.50%) were severe; adverse conditions raised risk — rain 1.97%, dark-but-lighted roads 2.37%, 36–40 mph zones 3.72%; vulnerable road users were most at risk — pedestrians 14.34%, motorcyclists 13.39%, cyclists 7.53%.
-2. [Visualizing Severe Traffic Crash Patterns in Chicago (2024–2025)](https://github.com/mc63151-code/data-science-project/tree/main/Chicago-Severe-Crash-Visualization)
-   - **Description:** The project visualizes where and under which temporal, environmental, road-user, and demographic conditions severe traffic crashes were disproportionately represented in Chicago during 2024–2025 (CISC7204 Assignment 02 pair project).
-   - **Technologies Used:** The notebook uses pandas, numpy, matplotlib, seaborn, plotly, and folium (interactive heatmaps, bar charts, and geographic heat map).
-   - **Results:** 3,312 severe crashes (1.50% overall rate); peak month 2025-08; peak weekday–hour Thursday 03:00; pedestrians highest among road users (13.61%); people aged 75+ highest among age groups.
+## Dataset & Source
 
-### Directory Structure
+The analysis uses three public datasets published by the City of Chicago through the **Chicago Data Portal** (Socrata Open Data API):
 
-```
-└── data-science-project/
-    ├── README.md
-    ├── requirements.txt
-    ├── Chicago_Traffic_Crash_Severity_Analysis.ipynb
-    ├── figures/
-    │   ├── notebook_figure_cell37.png
-    │   ├── notebook_figure_cell38.png
-    │   ├── notebook_figure_cell44.png
-    │   ├── notebook_figure_cell60.png
-    │   ├── notebook_figure_cell61.png
-    │   ├── notebook_figure_cell71.png
-    │   └── notebook_figure_cell72.png
-    └── Chicago-Severe-Crash-Visualization/
-        ├── README.md
-        ├── requirements.txt
-        ├── CISC7204-Assgn02-PairProject-Code-MC631517-MC637132.ipynb
-        ├── CISC7204-Assgn02-RevisedPairProjectProposal-MC631517-MC637132.docx
-        └── figures/
-            ├── monthly_crashes_and_severe_rate.png
-            ├── lighting_weather_severe_rate_heatmap.png
-            ├── speed_limit_units_boxplots.png
-            └── person_severe_injury_rates.png
-```
+| Dataset | Source | API Endpoint |
+|---|---|---|
+| Traffic Crashes – Crashes | <https://data.cityofchicago.org/Transportation/Traffic-Crashes-Crashes/85ca-t3if> | `85ca-t3if` |
+| Traffic Crashes – Vehicles | <https://data.cityofchicago.org/Transportation/Traffic-Crashes-Vehicles/68nd-jvt3> | `68nd-jvt3` |
+| Traffic Crashes – People | <https://data.cityofchicago.org/Transportation/Traffic-Crashes-People/u6pd-qa9d> | `u6pd-qa9d` |
+
+The notebook consumes the cleaned CSV files produced in Assignment 1 (`chicago_crashes_2024_2025_clean_base.csv`, `chicago_vehicles_2024_2025_clean_base.csv`, `chicago_people_2024_2025_clean_base.csv`). Only non-personal, aggregated crash attributes are used; no personal identifying information is published in this repository.
+
+## Methods & Tools
+
+- **Data preparation & validation**: `pandas` / `numpy` — data loading, missing-value and category audit, severity mapping, grouped aggregation of severe-crash rates.
+- **Visualization**: `matplotlib` — monthly frequency/severity line plots; `seaborn` — lighting × weather heatmap and severity box plots; `plotly` — interactive weekday–hour heatmap and road-user bar chart; `folium` — geographic heat map of severe crash locations.
+
+## Visualizations
+
+![Monthly crashes and severe-crash rate](figures/monthly_crashes_and_severe_rate.png)
+
+![Severe-crash rate by lighting and weather](figures/lighting_weather_severe_rate_heatmap.png)
+
+![Posted speed limit and units involved by severity](figures/speed_limit_units_boxplots.png)
+
+![Person severe-injury rates by age group and person type](figures/person_severe_injury_rates.png)
+
+The notebook also renders interactive Plotly heatmaps/bar charts and a Folium heat map (open the notebook to explore them).
+
+## Key Findings
+
+1. **Severe crashes are rare but consequential.** Of 220,709 crash records with a known severity, **3,312** were severe (fatal or incapacitating injury) — an overall severe-crash rate of **1.50%**.
+2. **Temporal patterns.** The highest monthly severe-crash rate occurred in **2025-08**; the highest weekday–hour rate was **Thursday 03:00**.
+3. **Road-user patterns.** **Pedestrians** had the highest severe-involvement rate among person types (**13.61%**, 889 / 6,532), followed by **bicycles** (**7.37%**, 360 / 4,888).
+4. **Demographic patterns.** People aged **75+** had the highest severe-injury rate among age groups (130 / 8,285 ≈ 1.57%).
+5. **Data quality.** 466 crash records (0.21%) had no recorded `most_severe_injury` and were excluded from severity-rate analyses; 3,287 severe crashes were geocoded for the spatial map.
+
+## Limitations
+
+- **Observational, not causal**: descriptive/exploratory analysis; no confounding control or significance testing.
+- **Missing severity labels**: 466 records (≈0.2%) excluded from severity-rate analyses.
+- **Reporting bias**: relies on police crash reports, which may under-report minor crashes.
+- **Two-year window**: 2024–2025 only, limiting generalizability.
+- **Simplified severity mapping**: "minor injury" groups non-incapacitating injuries with reported-but-not-evident cases.
+
+## How to Reproduce
+
+1. **Prepare the data.** The notebook reads the cleaned CSVs from the Assignment 1 data directory:
+   `chicago_crashes_2024_2025_clean_base.csv`, `chicago_vehicles_2024_2025_clean_base.csv`, `chicago_people_2024_2025_clean_base.csv`.
+   Adjust the `DATA_DIR` path in the first code cell if your files are stored elsewhere.
+
+2. **Set up the environment.**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate        # macOS / Linux
+   pip install -r requirements.txt
+   ```
+
+3. **Run the notebook.**
+   ```bash
+   jupyter notebook CISC7204-Assgn02-PairProject-Code-MC631517-MC637132.ipynb
+   ```
+   Execute cells top-to-bottom.
+
+4. **Outputs.** The notebook prints summary tables and renders static figures, interactive Plotly charts, and a Folium heat map.
+*（内容由AI生成，仅供参考）*
